@@ -1,0 +1,20 @@
+[package]
+name = "btcprice"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4"
+anyhow = "1"
+clap = "3.0.0-beta.5"
+color-backtrace = { version = "0.5" }
+pretty_env_logger = "0.4"
+
+serde = { version = "1", features = ["derive"] }
+chrono = {version = "0.4", features = ["serde"]}
+reqwest = {version = "0.11.6", features = ["blocking"]}
+csv = {version = "1.1"}
+
+
